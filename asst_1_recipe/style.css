@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Times, serif;
-    background: radial-gradient(1200px 700px at 20% 0%, #fff 0%, var(--bg) 55%, #f6efe8 100%);
+    background: radial-gradient(1200px 700px at 20% 0%, #fff 0%, var(--bg) 55%, #99EDC3 100%);
     line-height: 1.6;
 }
 
@@ -75,7 +75,7 @@ img{
 .meta-item {
   flex: 1 1 10rem;
   padding: var(--space-3) var(--space-4);
-  background: #fff;
+  background:#fce9d6;
   border: 1px solid var(--border);
   border-radius: 1rem; 
   display: flex;
@@ -96,7 +96,7 @@ img{
 .ingredients-section {
   grid-area: ingredients;
   padding: var(--space-5);
-  background: #fff;
+  background:#fce9d6;
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) - .5rem);
 }
@@ -118,7 +118,7 @@ img{
 .instructions-section {
   grid-area: instructions;
   padding: var(--space-5);
-  background: #fff;
+  background:#fce9d6;
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) - .5rem);
 }
@@ -149,7 +149,7 @@ img{
 
 
 :root{
-  --bg: #FFFDD0;             
+  --bg:#99DEC3;             
   --text: #1f1b16;             
   --accent: #c26a3a;      
   --border: #eadfd6;      
