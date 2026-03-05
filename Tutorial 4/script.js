@@ -121,9 +121,9 @@ let guestLine = '';
 if (guests === 0) {
   guestLine = 'flying solo.';} 
 else if (guests === 1){
-  guestLine = 'bringing 1 guest.';} 
+  guestLine = 'and will bring 1 awesome guest of honor.';} 
 else {         
-  guestLine = `bringing ${guests} guests.`;}
+  guestLine = `and will bring ${guests} awesome guests of honor.`;}
 
 confirmation.textContent = `${getName()} is coming — ${guestLine}`;};
 
