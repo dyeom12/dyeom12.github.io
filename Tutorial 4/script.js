@@ -22,6 +22,7 @@ let isGoing    = false;
 let isNotGoing = false;
 
 
+
 // ── 2. ELEMENTS: find everything we'll need ─────────────────
 //
 // We grab all the elements once, at the top.
@@ -32,10 +33,12 @@ const guestInput   = document.querySelector('#guest-input');
 const guestField   = document.querySelector('#guest-field');
 
 // Try getting the yes, no, confirmation and regret elements from the html.
-// const btnYes       = ;
-// const btnNo        = ;
-// const confirmation = ;
-// const regret       = ;
+
+const btnYes       = document.querySelector('#btn-yes');
+const btnNo        = document.querySelector('#btn-no');
+const confirmation = document.querySelector('#confirmation');
+const regret       = document.querySelector('#regret');
+
 
 
 // ── 3. HELPERS: small functions that do one thing ───────────
@@ -56,6 +59,7 @@ const getName = () => {
 const getGuests = () => Number(guestInput.value);
 
 
+
 // ── 4. TASK 1 & 2: wire up the YES button ───────────────────
 //
 // When the user clicks Going:
@@ -66,12 +70,15 @@ const getGuests = () => Number(guestInput.value);
 //   - call updateConfirmation() (written below in Task 3)
 
 btnYes.addEventListener('click', () => {
-
-  // YOUR CODE HERE
-
-
+isGoing = true;
+isNotGoing = false;
+btnYes.classList.add('active');
+btnNo.classList.remove('active');
+guestField.classList.remove('hidden');
+confirmation.classList.remove('hidden');
+regret.classList.add('hidden');
+updateConfirmation();
 });
-
 
 // When the user clicks Can't make it:
 //   - set isGoing = false, isNotGoing = true
@@ -81,11 +88,16 @@ btnYes.addEventListener('click', () => {
 //   - set regret.textContent using a template literal with getName()
 
 btnNo.addEventListener('click', () => {
-
-  // YOUR CODE HERE
-
-
+isGoing = false;
+isNotGoing = true;
+btnNo.classList.add('active');
+btnYes.classList.remove('active');
+guestField.classList.add('hidden');
+confirmation.classList.add('hidden');
+regret.classList.remove('hidden');
+updateRegret();
 });
+
 
 
 // ── 5. TASK 3 & 4: build the confirmation message ───────────
@@ -105,13 +117,19 @@ btnNo.addEventListener('click', () => {
 const updateConfirmation = () => {
   const guests = getGuests();
 
-  // YOUR CODE HERE: build guestLine based on guests value
+let guestLine = '';
+if (guests === 0) {
+  guestLine = 'flying solo.';} 
+else if (guests === 1){
+  guestLine = 'bringing 1 guest.';} 
+else {         
+  guestLine = `bringing ${guests} guests.`;}
 
+confirmation.textContent = `${getName()} is coming — ${guestLine}`;};
 
-  // YOUR CODE HERE: set confirmation.textContent using a template literal
-  // Example shape: `${getName()} is coming — ${guestLine}`
+const updateRegret = () => {
+  regret.textContent = 'Aw man... we really wish you could join us!'};
 
-};
 
 
 // ── 6. TASK 5: live updates ──────────────────────────────────
@@ -124,17 +142,15 @@ const updateConfirmation = () => {
 
 nameInput.addEventListener('input', () => {
 
-  // YOUR CODE HERE
-
-
+if (isGoing) updateConfirmation();
+if (isNotGoing) updateRegret();
 });
 
 guestInput.addEventListener('input', () => {
 
-  // YOUR CODE HERE
-
-
+if (isGoing) updateConfirmation();
 });
+
 
 
 // ── DEBUGGING ────────────────────────────────────────────────
