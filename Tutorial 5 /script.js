@@ -249,6 +249,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
        `
        <div class="found-restaurant">
        <div class="restaurant-name">${bestRestaurant.name}</div>
+       <div class="restaurant-cuisine">${bestRestaurant.cuisine}</div>
        <div class="restaurant-rating">${bestRestaurant.rating}</div>
        </div>
        `;
