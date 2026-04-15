@@ -1,4 +1,10 @@
 /* BASE STYLES - Students can modify and extend */
+
+#restaurant-map {
+    height: 480px;
+    width: 100%;
+}
+
 :root {
     --primary-color: #007cba;
     --secondary-color: #28a745;
