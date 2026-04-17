@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: #007cba;
-    --secondary-color: #28a745;
-    --background-color: #f8f9fa;
+    --primary-color: #48A684;
+    --secondary-color:#C9A0DC ;
+    --background-color:#FCD0C7;
     --card-background: #ffffff;
     --text-color: #333;
     --border-color: #ddd;
@@ -47,7 +47,7 @@ body {
 }
 
 .view-button:hover {
-    background: #005a87;
+    background: #C9A0DC;
 }
 
 .view-button.active {
@@ -176,7 +176,7 @@ body {
 .stat-card {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, var(--primary-color), #0056b3);
+    background:#48A684;
     color: white;
     border-radius: 8px;
 }
