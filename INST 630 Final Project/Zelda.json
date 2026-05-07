@@ -1,0 +1,81 @@
+{
+  "slides": [
+    {
+      "image": "./Image/Chapter1.jpg",
+      "name": "The Great Deku Tree",
+      "des": "In the Kokiri Forest, Link is summoned by the Great Deku Tree. In order to prove his courage, Link must destroy the Great Deku Tree's curse...",
+      "bgPosition": "50% 50%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter2.jpg",
+      "name": "Becoming the Hero!",
+      "des": "Despite his lack of training, Link bravely ventures inside the Great Deku Tree and defeats his enemies!",
+      "bgPosition": "50% 50%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter3.jpg",
+      "name": "Saving the Deku Tree!",
+      "des": "Eventually, Link defeats the dungeon boss and obtains the first spiritual stone!",
+      "bgPosition": "50% 50%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter4.jpg",
+      "name": "Meeting Zelda",
+      "des": "After leaving the Kokiri Forest, Link meets Princess Zelda at Hyrule Castle. She commands Link to obtain the Master Sword and defeat Ganondorf.",
+      "bgPosition": "50% 50%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter5.jpg",
+      "name": "No Time Left!",
+      "des": "Upon returning to Hyrule Castle, Link meets Ganondorf, who is far too powerful for him right now...",
+      "bgPosition": "50% 20%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter6.jpg",
+      "name": "The Master Sword",
+      "des": "Link hurries to the Temple of Time and pulls the Master Sword, but unexpectedly enters a 7-year slumber!",
+      "bgPosition": "50% 50%",
+      "bgSize": "80%"
+    },
+    {
+      "image": "./Image/Chapter7.jpg",
+      "name": "Reunion with Epona",
+      "des": "After waking up, Link is now an adult. Hyrule is no longer the same, but he still has Epona",
+      "bgPosition": "50% 20%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter8.jpg",
+      "name": "Meeting Sheik",
+      "des": "During his journey, Link meets Sheik, who assists him to defeat Ganondorf. Little does he know, that Sheik is actually Zelda in disguise...",
+      "bgPosition": "50% 50%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter9.jpg",
+      "name": "Freeing the Sages",
+      "des": "Slowly but surely, Link becomes stronger by defeating enemies and freeing the legendary sages!",
+      "bgPosition": "50% 30%",
+      "bgSize": "cover"
+    },
+    {
+      "image": "./Image/Chapter10.jpg",
+      "name": "The Final Battle!",
+      "des": "After freeing all five sages, Link finally defeats Ganondorf in one final battle!",
+      "bgPosition": "50% 20%",
+      "bgSize": "80%"
+    },
+    {
+      "image": "./Image/Chapter11.jpg",
+      "name": "Peace Restored",
+      "des": "After saving Hyrule, Link returns to the past and makes up for lost time",
+      "bgPosition": "50% 50%",
+      "bgSize": "cover"
+    }
+  ]
+}
